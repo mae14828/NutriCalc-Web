@@ -9,4 +9,7 @@ button.addEventListener("click",function(){
         alert("0以上の数値を入力してください。");
         return;
     }
+    let calories = protein * 4;
+    proteinResult.textContent = protein;
+    caloriesResult.textContent = calories;
 })
