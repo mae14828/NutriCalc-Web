@@ -5,7 +5,7 @@ const caloriesResult = document.getElementById("caloriesResult");
 
 button.addEventListener("click",function(){
     let protein = Number(proteinInput.value);
-    if (protein < 0 || proteinInput.value == ""){
+    if (protein < 0 || proteinInput.value === ""){
         alert("0以上の数値を入力してください。");
         return;
     }
