@@ -1,3 +1,4 @@
+const liveCaloriesButton = document.getElementById("liveCaloriesButton");
 const calcButton = document.getElementById("calcButton");
 const proteinInput = document.getElementById("proteinInput");
 const fatInput = document.getElementById("fatInput");
@@ -13,6 +14,14 @@ let totalProtein = 0;
 let totalFat = 0;
 let totalCarb = 0;
 let totalCalories = 0;
+
+liveCaloriesButton.addEventListener("click",function(){
+    let protein = Number(proteinInput.value);
+    let fat = Number(fatInput.value);
+    let carb = Number(carbInput.value);
+    let calories = protein *4 + fat *9 + carb *4;
+    liveCalories.textContent = calories;
+})
 
 calcButton.addEventListener("click",function(){
     let protein = Number(proteinInput.value);
