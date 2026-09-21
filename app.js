@@ -17,10 +17,7 @@ button.addEventListener("click",function(){
     let protein = Number(proteinInput.value);
     let fat = Number(fatInput.value);
     let carb = Number(carbInput.value);
-    if (protein < 0 || proteinInput.value === ""){
-        alert("0以上の数値を入力してください。");
-        return;
-    }
+    
     let calories = protein *4 + fat *9 + carb *4;
     proteinResult.textContent = protein;
     fatResult.textContent = fat;
