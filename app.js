@@ -20,7 +20,7 @@ liveCaloriesButton.addEventListener("click",function(){
     let fat = Number(fatInput.value);
     let carb = Number(carbInput.value);
     let calories = protein *4 + fat *9 + carb *4;
-    liveCalories.textContent = calories;
+    liveCalories.textContent = calories.toFixed(2);
 })
 
 calcButton.addEventListener("click",function(){
@@ -34,8 +34,8 @@ calcButton.addEventListener("click",function(){
     totalCarb += carb;
     totalCalories += calories;
 
-    proteinResult.textContent = totalProtein;
-    fatResult.textContent = totalFat;
-    carbResult.textContent = totalCarb;
-    caloriesResult.textContent = totalCalories;
+    proteinResult.textContent = totalProtein.toFixed(2);
+    fatResult.textContent = totalFat.toFixed(2);
+    carbResult.textContent = totalCarb.toFixed(2);
+    caloriesResult.textContent = totalCalories.toFixed(2);
 })
