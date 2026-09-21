@@ -38,4 +38,9 @@ calcButton.addEventListener("click",function(){
     fatResult.textContent = totalFat.toFixed(2);
     carbResult.textContent = totalCarb.toFixed(2);
     caloriesResult.textContent = totalCalories.toFixed(2);
+
+    proteinInput.value = "";
+    fatInput.value = "";
+    carbInput.value = "";
+    liveCalories.textContent = "";
 })
