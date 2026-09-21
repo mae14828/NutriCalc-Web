@@ -1,11 +1,17 @@
 const button = document.getElementById("calcButton");
 const proteinInput = document.getElementById("proteinInput");
-const proteinResult = document.getElementById("proteinResult");
 const fatInput = document.getElementById("fatInput");
-const fatResult = document.getElementById("fatResult");
 const carbInput = document.getElementById("carbInput");
+
+const proteinResult = document.getElementById("proteinResult");
+const fatResult = document.getElementById("fatResult");
 const carbResult = document.getElementById("carbResult");
 const caloriesResult = document.getElementById("caloriesResult");
+
+let totalProtein = 0;
+let totalFat = 0;
+let totalCarb = 0;
+let totalCalories = 0;
 
 button.addEventListener("click",function(){
     let protein = Number(proteinInput.value);
