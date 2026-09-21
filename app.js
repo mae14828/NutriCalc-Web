@@ -28,8 +28,14 @@ calcButton.addEventListener("click",function(){
     let fat = Number(fatInput.value);
     let carb = Number(carbInput.value);
     let calories = protein *4 + fat *9 + carb *4;
-    proteinResult.textContent = protein;
-    fatResult.textContent = fat;
-    carbResult.textContent = carb;
-    caloriesResult.textContent = calories;
+
+    totalProtein += protein;
+    totalFat += fat;
+    totalCarb += carb;
+    totalCalories += calories;
+
+    proteinResult.textContent = totalProtein;
+    fatResult.textContent = totalFat;
+    carbResult.textContent = totalCarb;
+    caloriesResult.textContent = totalCalories;
 })
