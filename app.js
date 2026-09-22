@@ -39,6 +39,10 @@ calcButton.addEventListener("click",function(){
     carbResult.textContent = totalCarb.toFixed(2);
     caloriesResult.textContent = totalCalories.toFixed(2);
 
+    const newInputItem = document.createElement("li");
+    newInputItem.textContent = `タンパク質: ${protein}g, 脂質: ${fat}g, 糖質: ${carb}g, カロリー: ${calories}kcal`;
+    inputList.appendChild(newInputItem);
+
     proteinInput.value = "";
     fatInput.value = "";
     carbInput.value = "";
