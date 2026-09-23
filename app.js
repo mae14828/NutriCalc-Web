@@ -52,5 +52,6 @@ calcButton.addEventListener("click",function(){
     proteinInput.value = "";
     fatInput.value = "";
     carbInput.value = "";
+    saltInput.value = "";
     liveCalories.textContent = "";
 })
