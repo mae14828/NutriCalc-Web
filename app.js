@@ -46,7 +46,7 @@ calcButton.addEventListener("click",function(){
     caloriesResult.textContent = totalCalories.toFixed(2);
 
     const newInputItem = document.createElement("li");
-    newInputItem.textContent = `タンパク質: ${protein.toFixed(2)}g, 脂質: ${fat.toFixed(2)}g, 糖質: ${carb.toFixed(2)}g, カロリー: ${calories.toFixed(2)}kcal`;
+    newInputItem.textContent = `タンパク質: ${protein.toFixed(2)}g, 脂質: ${fat.toFixed(2)}g, 糖質: ${carb.toFixed(2)}g, 食塩相当量: ${salt.toFixed(2)}g, カロリー: ${calories.toFixed(2)}kcal`;
     inputList.appendChild(newInputItem);
 
     proteinInput.value = "";
